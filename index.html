@@ -11,10 +11,128 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iI2ZmOGI2OCI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkZCIgZD0iTTEyLjk2MyAyLjI4NmEuNzUuNzUgMCAwIDAtMS4wNzEtLjEzNiA5Ljc0MiA5Ljc0MiAwIDAgMC0zLjUzOSA2LjE3NiA3LjU0NyA3LjU0NyAwIDAgMS0xLjcwNS0xLjcxNS43NS43NSAwIDAgMC0xLjE1Mi0uMDgyQTkgOSAwIDEgMCAxNS42OCA0LjUzNGE3LjQ2IDcuNDYgMCAwIDEtMi43MTctMi4yNDhaTTE1Ljc1IDE0LjI1YTMuNzUgMy43NSAwIDEgMS03LjMxMy0xLjE3MmMuNjI4LjQ2NSAxLjM1LjgxIDIuMTMzIDFhNS45OSA1Ljk5IDAgMCAxIDEuOTI1LTMuNTQ2IDMuNzUgMy43NSAwIDAgMSAzLjI1NSAzLjcxOFoiIGNsaXAtcnVsZT0iZXZlbm9kZCIgLz48L3N2Zz4="
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Shop | Monogram Consoles and Modules</title>
   </head>
   <body>
+    <header class="top-header">
+      <a href="" class="top-link">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="top-img"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M12.963 2.286a.75.75 0 0 0-1.071-.136 9.742 9.742 0 0 0-3.539 6.176 7.547 7.547 0 0 1-1.705-1.715.75.75 0 0 0-1.152-.082A9 9 0 1 0 15.68 4.534a7.46 7.46 0 0 1-2.717-2.248ZM15.75 14.25a3.75 3.75 0 1 1-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 0 1 1.925-3.546 3.75 3.75 0 0 1 3.255 3.718Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <p class="top-p">MONOGRAM</p>
+      </a>
+
+      <section class="top-right">
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#">How it Works</a></li>
+            <li><a href="#">Workflows</a></li>
+            <li><a href="#">Download</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Shop</a></li>
+          </ul>
+        </nav>
+
+        <input type="checkbox" id="menu-check" hidden />
+        <label for="menu-check" class="hamburger">&#9776;</label>
+        <label for="menu-check" class="overlay"></label>
+
+        <nav class="side-menu">
+          <button class="close-btn" aria-label="Close Menu">&times;</button>
+          <label for="menu-check" class="close-btn">&times;</label>
+
+          <div class="flex-bar">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="menu-picture"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12.963 2.286a.75.75 0 0 0-1.071-.136 9.742 9.742 0 0 0-3.539 6.176 7.547 7.547 0 0 1-1.705-1.715.75.75 0 0 0-1.152-.082A9 9 0 1 0 15.68 4.534a7.46 7.46 0 0 1-2.717-2.248ZM15.75 14.25a3.75 3.75 0 1 1-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 0 1 1.925-3.546 3.75 3.75 0 0 1 3.255 3.718Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <h2 class="header-menubar">MONOGRAM</h2>
+          </div>
+          <ul>
+            <li><a href="#">How it Works</a></li>
+            <li><a href="#">Workflows</a></li>
+            <li><a href="#">Audio Console</a></li>
+            <li><a href="#">Photo Console</a></li>
+            <li><a href="#">Video Console</a></li>
+            <li><a href="#">Mini Console</a></li>
+            <li><a href="#">Download</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Shop</a></li>
+          </ul>
+        </nav>
+        <a href="" class="link-bag">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="img-bag"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M7.5 6v.75H5.513c-.96 0-1.764.724-1.865 1.679l-1.263 12A1.875 1.875 0 0 0 4.25 22.5h15.5a1.875 1.875 0 0 0 1.865-2.071l-1.263-12a1.875 1.875 0 0 0-1.865-1.679H16.5V6a4.5 4.5 0 1 0-9 0ZM12 3a3 3 0 0 0-3 3v.75h6V6a3 3 0 0 0-3-3Zm-3 8.25a3 3 0 1 0 6 0v-.75a.75.75 0 0 1 1.5 0v.75a4.5 4.5 0 1 1-9 0v-.75a.75.75 0 0 1 1.5 0v.75Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </a>
+
+        <div class="navbar">
+          <input type="checkbox" id="currency-toggle" hidden />
+
+          <label for="currency-toggle" class="currency-menu">
+            Euro &#9662;
+          </label>
+
+          <ul class="dropdown-menu">
+            <li>USD ($)</li>
+            <li>CAD ($)</li>
+            <li>EUR (€)</li>
+            <li>AUD ($)</li>
+            <li>GBP (£)</li>
+            <li>KRW (₩)</li>
+            <li>JPY (¥)</li>
+          </ul>
+        </div>
+      </section>
+    </header>
+    <div class="header-big">
+      <h1 class="header-header">A CONSOLE FOR<br />EVERY WORKFLOW</h1>
+      <h2 class="header-two">Discover the perfect console for yours</h2>
+    </div>
+
     <main>
       <section>
         <div class="console-container">
@@ -153,62 +271,61 @@
           </div>
         </div>
       </section>
-      <footer class="footer">
-        <div class="footer-container">
-          <div class="footer-title">Monogram</div>
-          <address class="footer-content">
-            305 King St. W.<br />
-            Suite 502<br />
-            Kitchener, ON<br />
-            Canada
-          </address>
-        </div>
-        <div class="footer-container">
-          <div class="footer-title">Quick Links</div>
-          <a class="footer-link" href="#">Home</a>
-          <a class="footer-link" href="#">How it Works</a>
-          <a class="footer-link" href="#">Shop</a>
-          <a class="footer-link" href="#">Download</a>
-        </div>
-        <div class="footer-container">
-          <div class="footer-title">Help</div>
-          <a class="footer-link" href="#">FAQs</a>
-          <a class="footer-link" href="#">Support Center</a>
-          <a class="footer-link" href="#">Shipping and Sales</a>
-        </div>
-        <div class="footer-container">
-          <div class="footer-title">Information</div>
-          <a class="footer-link" href="#">About Us</a>
-          <a class="footer-link" href="#">Work with us</a>
-          <a class="footer-link" href="#">Privacy Policy</a>
-          <a class="footer-link" href="#">Terms of Use</a>
-          <a class="footer-link" href="#">Terms of Sale</a>
-          <a class="footer-link" href="#">Press Kit</a>
-        </div>
-        <div class="footer-container">
-          <div class="footer-title">Subscribe to Monogram</div>
-          <div class="footer-content">
-            Master productivity with Creative Console and get all <br />the
-            latest Monogram news.
-          </div>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email Address"
-          />
-          <button id="submit">Submit</button>
-          <div class="footer-icon">
-            <a href="#" class="footer-icon"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="footer-icon"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="footer-icon"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a href="#" class="footer-icon"><i class="fab fa-youtube"></i></a>
-          </div>
-          <div class="footer-content copyright-text">&copy; Monogram 2025</div>
-        </div>
-      </footer>
     </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-title">Monogram</div>
+        <address class="footer-content">
+          305 King St. W.<br />
+          Suite 502<br />
+          Kitchener, ON<br />
+          Canada
+        </address>
+      </div>
+      <div class="footer-container">
+        <div class="footer-title">Quick Links</div>
+        <a class="footer-link" href="#">Home</a>
+        <a class="footer-link" href="#">How it Works</a>
+        <a class="footer-link" href="#">Shop</a>
+        <a class="footer-link" href="#">Download</a>
+      </div>
+      <div class="footer-container">
+        <div class="footer-title">Help</div>
+        <a class="footer-link" href="#">FAQs</a>
+        <a class="footer-link" href="#">Support Center</a>
+        <a class="footer-link" href="#">Shipping and Sales</a>
+      </div>
+      <div class="footer-container">
+        <div class="footer-title">Information</div>
+        <a class="footer-link" href="#">About Us</a>
+        <a class="footer-link" href="#">Work with us</a>
+        <a class="footer-link" href="#">Privacy Policy</a>
+        <a class="footer-link" href="#">Terms of Use</a>
+        <a class="footer-link" href="#">Terms of Sale</a>
+        <a class="footer-link" href="#">Press Kit</a>
+      </div>
+      <div class="footer-container">
+        <div class="footer-title">Subscribe to Monogram</div>
+        <div class="footer-content">
+          Master productivity with Creative Console and get all <br />the latest
+          Monogram news.
+        </div>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email Address"
+        />
+        <button id="submit">Submit</button>
+        <div class="footer-icon">
+          <a href="#" class="footer-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="footer-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="footer-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="footer-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="footer-content copyright-text">&copy; Monogram 2025</div>
+      </div>
+    </footer>
   </body>
 </html>
