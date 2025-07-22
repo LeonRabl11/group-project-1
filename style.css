@@ -50,13 +50,37 @@
 }
 .gallery-item-container {
   position: relative;
+  cursor: pointer;
 }
 
-.gallery-item {
+.image-wrapper {
+  position: relative;
   width: 100%;
   height: 330px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.image-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.image-wrapper .hover-img {
+  opacity: 0;
+}
+
+.image-wrapper:hover .hover-img {
+  opacity: 1;
+}
+
+.image-wrapper:hover .default-img {
+  opacity: 0;
 }
 
 .pre-order {
@@ -86,7 +110,7 @@
   font-weight: 600;
   font-size: 1.1rem;
   color: #080b1b;
-  margin-right: 3em;
+  max-width: 65%;
 }
 
 .price {
@@ -94,6 +118,34 @@
   color: black;
   font-size: 0.9rem;
   margin-top: 0.2rem;
+}
+
+.btn-shop-now {
+  height: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.64em;
+  font-weight: 800;
+  text-transform: uppercase;
+  background-color: #1a2456;
+  border-radius: 2em;
+  border: none;
+  padding-inline: 1rem;
+  letter-spacing: 0.05em;
+  color: white;
+  margin-left: 1em;
+  display: none;
+  cursor: pointer;
+}
+
+.gallery-item-container:hover .btn-shop-now {
+  display: block;
+}
+
+.gallery-item-container:hover .price {
+  display: none;
+}
+.btn-shop-now:hover {
+  background-color: #080b1b;
 }
 
 .footer {
@@ -156,7 +208,7 @@ input::placeholder {
   font-size: 0.9em;
 }
 
-button {
+.footer-container button {
   font-family: "Montserrat", sans-serif;
   font-size: 0.64em;
   font-weight: 800;
@@ -170,6 +222,7 @@ button {
   color: #080b1b;
   margin-left: 1em;
 }
+
 .footer-icon {
   display: flex;
   flex-direction: row;
@@ -488,7 +541,6 @@ body {
   justify-content: center;
   align-items: center;
   color: #efc2b3;
-
   top: 0;
   left: 0;
   height: 100vh;
